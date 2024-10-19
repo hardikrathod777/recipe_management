@@ -40,3 +40,57 @@ The Recipe Management Application is a full-stack web app built with React (fron
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/your-username/recipe-management-app.git
+
+2. **Backend:**
+   
+   Navigate to the backend folder:
+     ```bash
+     cd backend
+     ```
+
+   Install dependencies:
+     ```bash
+     npm install
+     ```
+    Create a .env file and add the following environment variables:
+  
+    ```bash
+    MONGODB_URI=your_mongodb_uri
+    JWT_SECRET=your_jwt_secret
+    PORT=5000
+    ```
+
+    Start the backend server:
+    ```bash
+    npm start
+    ```
+
+3. Frontend:
+
+    Navigate to the frontend folder:
+     ```bash
+     cd frontend food-blog-app
+      ```
+     
+    Install dependencies:
+     ```bash
+     npm install
+      ```
+
+    Start the frontend server:
+     ```bash
+     npm run dev
+     ```
+
+## API Endpoints
+
+  POST **/api/auth/register** - Register a new user
+  POST **/api/auth/login** - Login an existing user
+  POST **/api/recipes** - Create a new recipe (auth required)
+  GET **/api/recipes** - Get all recipes
+  GET **/api/recipes/:id** - Get a recipe by ID
+  PUT **/api/recipes/:id** - Update a recipe (auth required)
+  DELETE **/api/recipes/:id** - Delete a recipe (auth required)
+
+     
+
